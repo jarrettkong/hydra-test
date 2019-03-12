@@ -42,9 +42,11 @@ describe('Hydra', () => {
     assert.equal(hydra.hasMissing, false);
   })
 
-  it.skip('should be able to spit acid from its heads', () => {
+  it.skip('should be able to spit acid from its head', () => {
     const hydra = new Hydra(3)
     assert.equal(hydra.spitAcid(), 'The Hydra spit 4 glob(s) of acid!')
+    const hydra2 = new Hydra(2)
+    assert.equal(hydra2.spitAcid(), 'The Hydra spit 3 glob(s) of acid!')
   })
 
   it.skip('should be be able to dodge incoming attacks', () => {
